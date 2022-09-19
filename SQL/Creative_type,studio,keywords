@@ -1,0 +1,20 @@
+COPY creative_type (saledid, fName)
+FROM 'C:\Users\Green\OneDrive\Desktop\Creative_type.csv'
+DELIMITER ';'
+CSV HEADER;
+
+SELECT * FROM creative_type
+
+COPY studio (metacleanid, fname)
+FROM 'C:\Users\Green\OneDrive\Desktop\studio.csv'
+DELIMITER ';'
+CSV HEADER;
+
+SELECT * FROM studio
+
+COPY keywords (saledid, keyword)
+FROM 'C:\Users\Green\OneDrive\Desktop\Keywords.csv'
+DELIMITER ';'
+CSV HEADER;
+
+SELECT * FROM keywords
