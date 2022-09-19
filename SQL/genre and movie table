@@ -1,0 +1,15 @@
+COPY movie(saledid, yyear,	title,	runtime,	international_box_office,	domestic_box_office,	worldwide_box_office,	production_budget,	theatre_count,	opening_weekend,	aaverage_run_per_theatre,	release_date,	summary,	metascore,	userscore,	metacleanid, salesurl,	metacleanurl)
+FROM 'C:\Users\Public\sales10.csv'
+DELIMITER ','
+CSV HEADER;
+
+
+SELECT * FROM movie
+
+
+COPY genre(fname,	metacleanid,	saledid)
+FROM 'C:\Users\Public\genre2.csv'
+DELIMITER ','
+CSV HEADER;
+
+SELECT * FROM genre
